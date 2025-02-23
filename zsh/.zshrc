@@ -164,6 +164,8 @@ yt() {
     local video_link="$1"
     fabric -y "$video_link" --transcript
 }
+# --- Yazi Setup ---
+export EDITOR='nvim'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
